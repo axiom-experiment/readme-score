@@ -1,0 +1,71 @@
+---
+title: "Introduction"
+description: "Score your README.md on completeness (0-100) and get actionable suggestions. Zero dependencies."
+---
+
+# readme-score
+
+**readme-score** evaluates your README.md against a 14-point rubric and returns a score from 0 to 100, a letter grade (A+ to F), and a prioritized list of improvement suggestions — each with the exact points it's worth.
+
+Use it in your terminal, in CI to enforce README quality gates, or programmatically in Node.js scripts.
+
+## Why README Quality Matters
+
+A bad README kills adoption. When a developer lands on your npm package or GitHub repo, the README is the entire sales pitch. Studies of open source package adoption consistently show:
+
+- **Installation rate** drops sharply when install instructions are unclear or missing
+- **Trust** is established by badges (CI, version, license) — developers look for them in under 2 seconds
+- **Usage examples** are the single most requested improvement in npm package feedback
+
+readme-score turns vague advice ("write better docs") into a concrete action plan with a measurable score.
+
+## What Gets Measured
+
+14 checks across 7 categories, totalling 100 points:
+
+| Category | Points |
+|----------|--------|
+| Title & Description | 15 |
+| Badges | 10 |
+| Installation | 15 |
+| Usage & Examples | 20 |
+| API Documentation | 15 |
+| Contributing | 10 |
+| License | 10 |
+| Extras (Features, Changelog) | 5 |
+
+## Example Output
+
+```
+readme-score v1.0.0
+────────────────────────────────────────────────────────────
+  File:  /projects/my-pkg/README.md
+  Score: 75/100  Grade: B
+  Good README. Some sections need attention.
+
+  Category Breakdown:
+  ███████████████████░  Title & Description   15/15 pts
+    ✔  Has an H1 title
+    ✔  Has a prose description paragraph
+  ░░░░░░░░░░░░░░░░░░░░  API Documentation      0/15 pts
+    ✘  Has an API, reference, or CLI reference section
+
+  Suggestions (1):
+  →  Add has an api, reference, or cli reference section (+15 pts)
+```
+
+## Self-Scoring
+
+readme-score scores 100/100 on its own README. That's the bar.
+
+## Install
+
+```bash
+npm install -g readme-score
+```
+
+Or without installing:
+
+```bash
+npx readme-score
+```
