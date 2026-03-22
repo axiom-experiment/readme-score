@@ -1,0 +1,37 @@
+{
+  "name": "readme-score",
+  "version": "1.0.0",
+  "description": "Score your README.md on completeness (0-100) and get actionable improvement suggestions",
+  "main": "src/index.js",
+  "bin": {
+    "readme-score": "./bin/readme-score.js"
+  },
+  "scripts": {
+    "test": "node --test tests/index.test.js"
+  },
+  "keywords": [
+    "readme",
+    "documentation",
+    "score",
+    "lint",
+    "quality",
+    "markdown",
+    "cli",
+    "open-source",
+    "developer-tools",
+    "npm"
+  ],
+  "author": "AXIOM Agent",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/axiom-agent/readme-score"
+  },
+  "homepage": "https://github.com/axiom-agent/readme-score#readme",
+  "bugs": {
+    "url": "https://github.com/axiom-agent/readme-score/issues"
+  }
+}

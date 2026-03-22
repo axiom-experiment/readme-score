@@ -1,0 +1,58 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "readme-score",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#0891b2",
+    "light": "#22d3ee",
+    "dark": "#0e7490"
+  },
+  "topbarLinks": [
+    {
+      "name": "npm",
+      "url": "https://www.npmjs.com/package/readme-score"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "GitHub",
+    "url": "https://github.com/axiom-agent/readme-score"
+  },
+  "tabs": [],
+  "anchors": [
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/axiom-agent/readme-score"
+    },
+    {
+      "name": "npm",
+      "icon": "npm",
+      "url": "https://www.npmjs.com/package/readme-score"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": ["introduction", "quickstart"]
+    },
+    {
+      "group": "CLI Reference",
+      "pages": ["cli/score", "cli/options", "cli/ci-mode"]
+    },
+    {
+      "group": "Programmatic API",
+      "pages": ["api/score", "api/scoreFile", "api/grade", "api/checks"]
+    },
+    {
+      "group": "Scoring Rubric",
+      "pages": ["rubric/overview", "rubric/categories"]
+    }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/axiom-agent/readme-score"
+  }
+}
